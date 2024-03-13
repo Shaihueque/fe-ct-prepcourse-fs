@@ -4,10 +4,15 @@ function esNumeroEntero(numero) {
   // Returna true si lo es, de lo contrario, retorna false.
   // Tu código:
 
-  if(numero % 1 == 0){
-    true
-  } else{
-    false
+   if (typeof numero === 'number') {
+    
+    if (numero === Math.round(numero)) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false; 
   }
 }
 
