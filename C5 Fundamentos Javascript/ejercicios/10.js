@@ -3,17 +3,15 @@ function esFechaValida(fecha) {
   // Comprueba si este corresponde a una fecha válida.
   // Si es así, retorna true, sino retorna false.
   // Tu código:
-  function esFechaValida(fecha) {
-    if(typeof(fecha)=="string"){
+
+    if(typeof fecha ==="string"){
+      return !isNaN(Date.parse(fecha));
+    }else if (fecha instanceof Date){
+      return !isNaN(fecha.getTime());
+    }else {
       return false;
     }
-      if (Date.parse(fecha)){
-        return true;
-      }else{
-        return false;
-      }
-    
-    }
+    //Me SALE UN ERROR
 }
 
 module.exports = esFechaValida;
