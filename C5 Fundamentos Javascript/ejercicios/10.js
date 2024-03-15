@@ -3,7 +3,7 @@ function esFechaValida(fecha) {
   // Comprueba si este corresponde a una fecha válida.
   // Si es así, retorna true, sino retorna false.
   // Tu código:
-
+  
     if(typeof fecha ==="string"){
       return !isNaN(Date.parse(fecha));
     }else if (fecha instanceof Date){
