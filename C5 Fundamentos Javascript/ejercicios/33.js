@@ -7,6 +7,8 @@ function esNumeroPrimo(numero) {
   // solo es divisible por sí mismo y por 1.
   // Tu código:
 
+  
+  
   for (var i = 2; i < numero; i++) {
     if (numero % i === 0) {
       return false;
