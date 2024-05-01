@@ -96,6 +96,10 @@ function sortArray(arrayOfStrings) {
   // de la longitud de cada string.
   // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
   // Tu código:
+
+  return arrayOfStrings.sort(function(a, b) {
+    return a.length - b.length;
+  });
 }
 
 function buscoInterseccion(array1, array2) {
@@ -105,6 +109,9 @@ function buscoInterseccion(array1, array2) {
   // Si no tienen elementos en común, retornar un arreglo vacío.
   // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
   // Tu código:
+
+  const interseccion = array1.filter(elemento => array2.includes(elemento));
+  return interseccion;  
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
